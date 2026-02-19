@@ -2,7 +2,7 @@ import openai
 
 client = openai.OpenAI(api_key="YOUR_API_KEY")
 
-with open("../../failure.log", "r") as f:
+with open("AIDemo/AIDemo/failure.log", "r") as f:
     logs = f.read()
 
 prompt = f"""
