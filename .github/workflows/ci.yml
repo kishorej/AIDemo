@@ -38,3 +38,13 @@ jobs:
               cd ../..
               ls -l AIDemo/AIDemo
               python AIDemo/AIDemo/ai-devops-demo/ai_analyzer.py
+      - name: Debug API key exists
+        run: |
+          if [ -z "$OPENAI_API_KEY" ]; then
+            echo "API key not set"
+          else
+           echo "API key is set"
+          fi
+       env:
+         OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+
