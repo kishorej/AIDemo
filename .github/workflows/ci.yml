@@ -34,4 +34,5 @@ jobs:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
         run: |
               pip install openai
-              python ai_analyzer.py
+              To update, run: pip install --upgrade pip
+              python AIDemo/ai_analyzer.py
