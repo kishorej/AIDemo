@@ -1,6 +1,6 @@
 import openai
 
-client = client = OpenAI(api_key=os.environ["OPENAI_API_KEY"])
+client = openai.OpenAI(api_key="YOUR_API_KEY")
 
 with open("AIDemo/AIDemo/failure.log", "r") as f:
     logs = f.read()
