@@ -28,3 +28,10 @@ jobs:
         with:
           name: failure-log
           path: failure.log
+ 
+      - name: Run AI Analyzer
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+        run: |
+              pip install openai
+              python ai_analyzer.py
