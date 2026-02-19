@@ -36,5 +36,5 @@ jobs:
               pip install openai
               pip install --upgrade pip
               cd ../..
-              ls -l AIDemo
-              python AIDemo/ai-devops-demo/ai_analyzer.py
+              ls -l AIDemo/AIDemo
+              python AIDemo/AIDemo/ai-devops-demo/ai_analyzer.py
