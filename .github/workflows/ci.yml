@@ -43,8 +43,8 @@ jobs:
           if [ -z "$OPENAI_API_KEY" ]; then
             echo "API key not set"
           else
-           echo "API key is set"
+            echo "API key is set"
           fi
-       env:
-         OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
 
