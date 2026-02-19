@@ -35,4 +35,5 @@ jobs:
         run: |
               pip install openai
               pip install --upgrade pip
-              python ../ai_analyzer.py
+              cd ..
+              python ai_analyzer.py
